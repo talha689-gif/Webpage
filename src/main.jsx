@@ -82,3 +82,10 @@ function EducationalMaterial(){
 function ContactPage(){
   return <motion.div initial={{opacity:0,y:18}} animate={{opacity:1,y:0}} transition={{duration:.45}} className="contact-grid"><div><p className="eyebrow">Contact</p><h2>Book an Appointment</h2><p className="lead small">For consultation and appointment details, contact the clinic during working hours.</p><div className="card image-card note-card"><img src={images.doctorPortrait} alt="Clinic"/><div className="note"><HeartPulse/><p>Please bring previous reports, scans, biopsy results and treatment records for better consultation.</p></div></div></div><div className="contact-card"><ContactCard icon={MapPin} label="Location" value="CMH Rawalpindi"/><ContactCard icon={Clock} label="Timing" value="08:00 AM - 03:00 PM"/><ContactCard icon={Mail} label="Email" value="oncologist.talha@gmail.com"/><ContactCard icon={Phone} label="Phone" value="03027961900, 03127236623"/><a className="primary-btn full" href="mailto:oncologist.talha@gmail.com">Email for Appointment <Calendar size={20}/></a><a className="whatsapp-btn" href="https://wa.me/923027961900" target="_blank">WhatsApp Appointment</a></div></motion.div>
 }
+
+function DoctorCard(){return <div className="doctor-card"><img src={images.doctorHero} alt="Dr Talha Maqsood"/><div className="doctor-info"><div className="iconbox large"><Stethoscope/></div><h3>Dr Talha Maqsood Clinical Oncologist</h3><p>CMH Rawalpindi</p><Info icon={Clock} text="08:00 AM - 03:00 PM"/><Info icon={MapPin} text="CMH Rawalpindi"/><Info icon={Mail} text="oncologist.talha@gmail.com"/><Info icon={Phone} text="03027961900, 03127236623"/></div></div>}
+function ImageFeature({image,title,text}){return <div className="card image-feature"><img src={image} alt={title}/><div className="card-body"><h3>{title}</h3><p>{text}</p></div></div>}
+function Info({icon:Icon,text}){return <div className="info"><Icon size={19}/><span>{text}</span></div>}
+function ContactCard({icon:Icon,label,value}){return <div className="contact-row"><div><Icon size={20}/></div><section><p>{label}</p><b>{value}</b></section></div>}
+
+createRoot(document.getElementById('root')).render(<App />);
