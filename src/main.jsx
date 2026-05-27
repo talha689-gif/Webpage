@@ -7,7 +7,7 @@ import './styles.css';
 const tabs = ['Home', 'Treatment Services', 'Educational Material', 'Contact'];
 
 const images = {
-  doctorHero: '"C:\Users\talha\OneDrive\Pictures\Screenshots\2022-08-03.png"?auto=format&fit=crop&w=900&q=80',
+  doctorHero: '"src/pubilc/docto.jpeg"?auto=format&fit=crop&w=900&q=80',
   doctorPortrait: '"/docto.jpeg"?auto=format&fit=crop&w=900&q=80',
   radiotherapy: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=900&q=80',
   imaging: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80',
