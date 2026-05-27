@@ -7,8 +7,8 @@ import './styles.css';
 const tabs = ['Home', 'Treatment Services', 'Educational Material', 'Contact'];
 
 const images = {
-  doctorHero: "docto.jpeg"
-  doctorPortrait: "docto.jpeg"
+  doctorHero: "doctor.avif"
+  doctorPortrait: "doctor.avif"
   radiotherapy: 'https://images.unsplash.com/photo-1581595219315-a187dd40c322?auto=format&fit=crop&w=900&q=80',
   imaging: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=900&q=80',
 };
